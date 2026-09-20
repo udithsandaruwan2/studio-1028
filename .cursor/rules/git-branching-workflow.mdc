@@ -1,0 +1,36 @@
+---
+description: Git branching — feature → develop; never merge to main unless asked
+alwaysApply: true
+---
+
+# Git branching workflow
+
+## Branches
+
+| Branch | Role |
+|--------|------|
+| `main` | Stable / production only. **Do not merge here unless the user explicitly says to.** |
+| `develop` | Integration branch. All finished feature work lands here. |
+| `feature/*` | One change set per branch (e.g. `feature/hero-motion`). |
+
+## Every change
+
+1. Start from latest `develop` (not `main`).
+2. Create / switch to a **feature branch** for the work.
+3. Commit on that feature branch as you go.
+4. When the feature is done, **merge it into `develop`** (fast-forward or merge commit).
+5. Do **not** merge into `main` until the user asks.
+
+## Agent must
+
+- Never commit directly on `main` or `develop` for feature work — use a feature branch first.
+- After finishing a feature branch, merge it into `develop` automatically.
+- Leave `main` unchanged unless the user explicitly requests a release/merge to `main`.
+- Follow the user rules for commit message style and safety (no force-push to main, no `--no-verify`, etc.).
+
+## Naming
+
+- Features: `feature/<short-kebab-description>`
+- Fixes: `fix/<short-kebab-description>`
+
+Full detail: `docs/BRANCHING.md`
