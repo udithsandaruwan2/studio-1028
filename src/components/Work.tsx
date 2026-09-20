@@ -23,7 +23,7 @@ export function Work() {
             <Reveal key={item.id} delay={(i % 3) * 0.06}>
               <a className="work__card" href="#contact">
                 <div className="work__media">
-                  <img src={item.image} alt="" loading="lazy" />
+                  <img src={item.image} alt={item.alt} loading="lazy" />
                 </div>
                 <h3 className="work__title">{item.title}</h3>
                 <div className="work__meta">

@@ -20,16 +20,16 @@ export function ImageStrip() {
   return (
     <section className="strip" aria-label="Studio reel">
       <div className="strip__track" ref={trackRef}>
-        {loop.map((src, i) => (
+        {loop.map((item, i) => (
           <motion.div
             className="strip__item"
-            key={`${src}-${i}`}
+            key={`${item.src}-${i}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: Math.min(i * 0.04, 0.3), duration: 0.6 }}
           >
-            <img src={src} alt="" loading="lazy" />
+            <img src={item.src} alt={item.alt} loading="lazy" />
           </motion.div>
         ))}
       </div>

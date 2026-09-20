@@ -1,3 +1,4 @@
+import { images, site } from '../data/content'
 import { Reveal } from './Reveal'
 
 export function About() {
@@ -14,12 +15,19 @@ export function About() {
               <br />
               Shipped with craft.
             </h2>
+            <div className="about__photo">
+              <img src={images.about.src} alt={images.about.alt} loading="lazy" />
+            </div>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="section__lead">
               Studio 1028 is a practice for experiments and developments — content systems, article
               writing, and social media marketing woven into one editorial engine. We prototype
               boldly, publish clearly, and refine relentlessly.
+            </p>
+            <p className="section__lead" style={{ marginTop: '1.25rem' }}>
+              Led from {site.location}, the studio treats every brief as a laboratory — and every
+              launch as the next experiment.
             </p>
           </Reveal>
         </div>
