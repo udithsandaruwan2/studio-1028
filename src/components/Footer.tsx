@@ -1,3 +1,5 @@
+import { site } from '../data/content'
+
 export function Footer() {
   const year = new Date().getFullYear()
 
@@ -16,10 +18,26 @@ export function Footer() {
             <a href="#work">Work</a>
             <a href="#notes">Notes</a>
             <a href="#contact">Contact</a>
+            <a href={site.developer.url} target="_blank" rel="noreferrer">
+              {site.developer.name}
+            </a>
           </nav>
         </div>
+        <div className="footer__credit">
+          <p>
+            Developed by{' '}
+            <a href={site.developer.url} target="_blank" rel="noreferrer">
+              {site.developer.name}
+            </a>
+          </p>
+          <a className="footer__dev-link" href={site.developer.url} target="_blank" rel="noreferrer">
+            uditsandarwan.com →
+          </a>
+        </div>
         <div className="footer__bottom">
-          <p className="mono">© {year} Studio 1028 — All rights reserved</p>
+          <p className="mono">
+            © {year} {site.name} — All rights reserved
+          </p>
           <a className="top-link" href="#top">
             Back to top ↑
           </a>

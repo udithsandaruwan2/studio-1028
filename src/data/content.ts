@@ -1,3 +1,15 @@
+export const site = {
+  name: 'Studio 1028',
+  tagline:
+    'A studio for experiments, development, content, writing, and social — building the next kind of signal.',
+  email: 'hello@studio1028.com',
+  location: 'Colombo · Remote',
+  developer: {
+    name: 'Udith Sandaruwan',
+    url: 'https://uditsandarwan.com',
+  },
+} as const
+
 export const practices = [
   {
     id: '01',
@@ -32,48 +44,48 @@ export const works = [
     title: 'Signal Room',
     tag: 'Experiment',
     year: '2026',
-    image:
-      'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/work-signal.jpg',
+    alt: 'Creative desk with digital art prints, tablet, and icon systems',
   },
   {
     id: '02',
     title: 'Night Grid',
     tag: 'Development',
     year: '2025',
-    image:
-      'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/work-grid.jpg',
+    alt: 'Code editor on a dark screen during a late build session',
   },
   {
     id: '03',
     title: 'Copper Press',
     tag: 'Content',
     year: '2025',
-    image:
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/work-copper.jpg',
+    alt: 'Video editing timeline with multitrack clips and waveforms',
   },
   {
     id: '04',
     title: 'Field Notes',
     tag: 'Writing',
     year: '2026',
-    image:
-      'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/work-notes.jpg',
+    alt: 'Notebook and pen ready for long-form editorial writing',
   },
   {
     id: '05',
     title: 'Orbit Campaign',
     tag: 'Social',
     year: '2025',
-    image:
-      'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/work-orbit.jpg',
+    alt: 'Analytics dashboard charting campaign performance',
   },
   {
     id: '06',
     title: 'Atlas Lab',
     tag: 'Experiment',
     year: '2026',
-    image:
-      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/work-atlas.jpg',
+    alt: 'Earth from orbit representing systems-scale experimentation',
   },
 ] as const
 
@@ -122,10 +134,25 @@ export const notes = [
 ] as const
 
 export const stripImages = [
-  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1467232004584-a241c4ba8dba?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80',
-  'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80',
+  { src: '/images/strip-01.jpg', alt: 'Circuit board detail — systems and experiments' },
+  { src: '/images/strip-02.jpg', alt: 'Minimal office interior with natural light' },
+  { src: '/images/strip-03.jpg', alt: 'Glass skyscraper architecture' },
+  { src: '/images/strip-04.jpg', alt: 'Architectural structure under construction' },
+  { src: '/images/strip-05.jpg', alt: 'Laptop learning and product research' },
+  { src: '/images/strip-06.jpg', alt: 'Music production studio console at night' },
 ] as const
+
+export const images = {
+  hero: {
+    src: '/images/hero.jpg',
+    alt: 'Aerial city skyline at golden hour over the water',
+  },
+  film: {
+    src: '/images/film.jpg',
+    alt: 'Professional recording studio with mixing console and guitars',
+  },
+  about: {
+    src: '/images/about-lab.jpg',
+    alt: 'Collaborative studio table with laptops, notes, and devices',
+  },
+} as const

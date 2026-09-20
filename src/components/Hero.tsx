@@ -1,14 +1,15 @@
 import { motion } from 'framer-motion'
+import { images, site } from '../data/content'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
 export function Hero() {
   return (
-    <section className="hero" id="top" aria-label="Studio 1028">
+    <section className="hero" id="top" aria-label={site.name}>
       <div className="hero__stage">
         <motion.img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
-          alt="Cinematic urban architecture at dusk"
+          src={images.hero.src}
+          alt={images.hero.alt}
           initial={{ scale: 1.12, opacity: 0 }}
           animate={{ scale: 1.06, opacity: 1 }}
           transition={{ duration: 1.6, ease }}
@@ -47,8 +48,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.55, duration: 0.7, ease }}
         >
-          A studio for experiments, development, content, writing, and social — building the next
-          kind of signal.
+          {site.tagline}
         </motion.p>
         <motion.div
           className="hero__actions"

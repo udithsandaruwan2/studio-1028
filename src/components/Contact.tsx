@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from 'react'
+import { site } from '../data/content'
 import { Reveal } from './Reveal'
 
 export function Contact() {
@@ -18,9 +19,10 @@ export function Contact() {
           <h2 className="section__title">Tell us what you want to invent</h2>
           <p className="section__lead" style={{ marginBottom: '2rem' }}>
             Briefs, half-formed ideas, ambitious campaigns — we start where curiosity is loudest.
+            Based in {site.location}.
           </p>
-          <a className="contact__email" href="mailto:hello@studio1028.com">
-            hello@studio1028.com
+          <a className="contact__email" href={`mailto:${site.email}`}>
+            {site.email}
           </a>
         </Reveal>
 

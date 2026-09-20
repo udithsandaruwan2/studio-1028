@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { site } from '../data/content'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -71,9 +72,20 @@ export function Nav() {
             </nav>
             <div className="menu-overlay__meta">
               <p className="mono">Experiments · Media · Systems</p>
-              <a className="mono" href="mailto:hello@studio1028.com" onClick={close}>
-                hello@studio1028.com
-              </a>
+              <div className="menu-overlay__meta-links">
+                <a className="mono" href={`mailto:${site.email}`} onClick={close}>
+                  {site.email}
+                </a>
+                <a
+                  className="mono"
+                  href={site.developer.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={close}
+                >
+                  Developed by {site.developer.name}
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
