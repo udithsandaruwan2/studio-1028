@@ -31,7 +31,7 @@ export function Footer() {
             </a>
           </p>
           <a className="footer__dev-link" href={site.developer.url} target="_blank" rel="noreferrer">
-            uditsandarwan.com →
+            udithsandaruwan.com →
           </a>
         </div>
         <div className="footer__bottom">
