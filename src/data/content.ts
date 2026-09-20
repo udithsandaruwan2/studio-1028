@@ -6,7 +6,7 @@ export const site = {
   location: 'Colombo · Remote',
   developer: {
     name: 'Udith Sandaruwan',
-    url: 'https://uditsandarwan.com',
+    url: 'https://udithsandaruwan.com/',
   },
 } as const
 
