@@ -950,6 +950,14 @@ ul {
   color: var(--signal);
 }
 
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.25rem;
+}
+
 .top-link {
   font-family: var(--font-mono);
   font-size: 0.68rem;
