@@ -141,7 +141,7 @@ export function Editor() {
             </div>
           </section>
 
-          <section className="panel" style={{ marginTop: '1rem' }}>
+          <section className="panel">
             <h2>Client</h2>
             <div className="field-grid cols-2">
               <Field label="Name" value={doc.client.name} onChange={(v) => patchClient('name', v)} />
@@ -164,27 +164,30 @@ export function Editor() {
           </section>
 
           {config.hasItems ? (
-            <section className="panel" style={{ marginTop: '1rem' }}>
+            <section className="panel">
               <h2>Items</h2>
               {doc.items.map((item) => (
                 <div className="item-row" key={item.id}>
                   <div className="office-field">
-                    <label>Item</label>
+                    <label htmlFor={`in-${item.id}`}>Item</label>
                     <input
+                      id={`in-${item.id}`}
                       value={item.name}
                       onChange={(e) => patchItem(item.id, { name: e.target.value })}
                     />
                   </div>
                   <div className="office-field">
-                    <label>Description</label>
+                    <label htmlFor={`id-${item.id}`}>Description</label>
                     <textarea
+                      id={`id-${item.id}`}
                       value={item.description}
                       onChange={(e) => patchItem(item.id, { description: e.target.value })}
                     />
                   </div>
                   <div className="office-field">
-                    <label>Qty</label>
+                    <label htmlFor={`iq-${item.id}`}>Qty</label>
                     <input
+                      id={`iq-${item.id}`}
                       type="number"
                       min={0}
                       step="0.01"
@@ -193,15 +196,17 @@ export function Editor() {
                     />
                   </div>
                   <div className="office-field">
-                    <label>Unit</label>
+                    <label htmlFor={`iu-${item.id}`}>Unit</label>
                     <input
+                      id={`iu-${item.id}`}
                       value={item.unit}
                       onChange={(e) => patchItem(item.id, { unit: e.target.value })}
                     />
                   </div>
                   <div className="office-field">
-                    <label>Unit price</label>
+                    <label htmlFor={`ip-${item.id}`}>Unit price</label>
                     <input
+                      id={`ip-${item.id}`}
                       type="number"
                       min={0}
                       step="0.01"
@@ -266,7 +271,7 @@ export function Editor() {
             </section>
           ) : null}
 
-          <section className="panel" style={{ marginTop: '1rem' }}>
+          <section className="panel">
             <h2>Notes</h2>
             <div className="office-field">
               <label htmlFor="notes">Internal / client notes</label>
@@ -279,22 +284,33 @@ export function Editor() {
           </section>
 
           {config.hasClauses ? (
-            <section className="panel" style={{ marginTop: '1rem' }}>
+            <section className="panel">
               <h2>Rules, terms &amp; policies</h2>
-              <p style={{ color: '#6b675f', marginTop: 0 }}>
+              <p className="clause-lede">
                 House rules are preloaded. Edit any clause for this document, or add more.
               </p>
               {doc.clauses.map((clause) => (
-                <div key={clause.id} style={{ marginBottom: '0.85rem' }}>
-                  <div className="office-field">
-                    <label htmlFor={`ct-${clause.id}`}>Clause title</label>
-                    <input
-                      id={`ct-${clause.id}`}
-                      value={clause.title}
-                      onChange={(e) => patchClause(clause.id, { title: e.target.value })}
-                    />
+                <div className="clause-card" key={clause.id}>
+                  <div className="clause-card__head">
+                    <div className="office-field">
+                      <label htmlFor={`ct-${clause.id}`}>Clause title</label>
+                      <input
+                        id={`ct-${clause.id}`}
+                        value={clause.title}
+                        onChange={(e) => patchClause(clause.id, { title: e.target.value })}
+                      />
+                    </div>
+                    <button
+                      className="office-btn office-btn--ghost"
+                      type="button"
+                      onClick={() =>
+                        patch({ clauses: doc.clauses.filter((c) => c.id !== clause.id) })
+                      }
+                    >
+                      Remove
+                    </button>
                   </div>
-                  <div className="office-field" style={{ marginTop: '0.4rem' }}>
+                  <div className="office-field">
                     <label htmlFor={`cb-${clause.id}`}>Text</label>
                     <textarea
                       id={`cb-${clause.id}`}
@@ -302,16 +318,6 @@ export function Editor() {
                       onChange={(e) => patchClause(clause.id, { body: e.target.value })}
                     />
                   </div>
-                  <button
-                    className="office-btn office-btn--ghost"
-                    type="button"
-                    style={{ marginTop: '0.35rem' }}
-                    onClick={() =>
-                      patch({ clauses: doc.clauses.filter((c) => c.id !== clause.id) })
-                    }
-                  >
-                    Remove clause
-                  </button>
                 </div>
               ))}
               <button
@@ -333,6 +339,7 @@ export function Editor() {
         </div>
 
         <div className="preview-wrap">
+          <p className="preview-label">Live preview</p>
           <Preview doc={doc} sheetRef={sheetRef} />
         </div>
       </div>

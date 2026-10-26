@@ -28,40 +28,40 @@ export function Dashboard() {
         ))}
       </div>
 
-      <h2 style={{ fontFamily: 'Syne, sans-serif', margin: '2.2rem 0 0.4rem', fontSize: '1.2rem' }}>
-        Saved documents
-      </h2>
+      <h2 className="office-section-title">Saved documents</h2>
       {docs.length === 0 ? (
         <p className="empty">Nothing saved yet. Pick a template above.</p>
       ) : (
-        <table className="doc-table">
-          <thead>
-            <tr>
-              <th>Number</th>
-              <th>Type</th>
-              <th>Client</th>
-              <th>Date</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            {docs.map((doc) => {
-              const kind = kinds.find((k) => k.id === doc.kind)
-              const sum = totals(doc.items, doc.taxRate, doc.discount)
-              return (
-                <tr key={doc.id}>
-                  <td>
-                    <Link to={`/admin/doc/${doc.id}`}>{doc.number || 'Draft'}</Link>
-                  </td>
-                  <td>{kind?.label}</td>
-                  <td>{doc.client.name || doc.client.company || '—'}</td>
-                  <td>{doc.date}</td>
-                  <td>{doc.items.length ? money(sum.grand, doc.currency) : '—'}</td>
-                </tr>
-              )
-            })}
-          </tbody>
-        </table>
+        <div className="doc-table-wrap">
+          <table className="doc-table">
+            <thead>
+              <tr>
+                <th>Number</th>
+                <th>Type</th>
+                <th>Client</th>
+                <th>Date</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              {docs.map((doc) => {
+                const kind = kinds.find((k) => k.id === doc.kind)
+                const sum = totals(doc.items, doc.taxRate, doc.discount)
+                return (
+                  <tr key={doc.id}>
+                    <td>
+                      <Link to={`/admin/doc/${doc.id}`}>{doc.number || 'Draft'}</Link>
+                    </td>
+                    <td>{kind?.label}</td>
+                    <td>{doc.client.name || doc.client.company || '—'}</td>
+                    <td>{doc.date}</td>
+                    <td>{doc.items.length ? money(sum.grand, doc.currency) : '—'}</td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
       )}
     </div>
   )
