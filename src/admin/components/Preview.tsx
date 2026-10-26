@@ -160,7 +160,16 @@ export function Preview({ doc, sheetRef }: Props) {
 
       <div className="sheet__sign">
         <div>
-          <span>Studio 1028</span>
+          <img
+            className="sheet__sign-mark"
+            src="/brand/signature.png"
+            alt="Signature of Udith Sandaruwan"
+          />
+          <span>
+            Udith Sandaruwan
+            <br />
+            Studio 1028
+          </span>
         </div>
         <div>
           <span>Client acknowledgement</span>
