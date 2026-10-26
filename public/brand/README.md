@@ -9,4 +9,7 @@ Main logos. Kept here as assets — not used on the public marketing site.
 | `logo-black-on-white.png` | Black wordmark on white |
 | `logo-white-on-black.png` | White wordmark on black |
 
-The office documents at `/admin` use the black wordmark on white paper.
+| `signature.png` | Handwritten signature, transparent (print on white) |
+| `signature-on-light.png` | Signature on light ground |
+
+The office documents at `/admin` use the black wordmark on white paper, with Udith Sandaruwan’s signature in the Studio 1028 sign-off.
