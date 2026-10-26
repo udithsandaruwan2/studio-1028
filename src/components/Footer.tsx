@@ -36,7 +36,10 @@ export function Footer() {
         </div>
         <div className="footer__bottom">
           <p className="mono">
-            © {year} {site.name} — All rights reserved
+            © {year} {site.name} — All rights reserved ·{' '}
+            <a href="/admin" className="top-link">
+              /admin
+            </a>
           </p>
           <a className="top-link" href="#top">
             Back to top ↑
