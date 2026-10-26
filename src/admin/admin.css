@@ -545,7 +545,7 @@
   width: auto;
   max-width: 130px;
   max-height: 46px;
-  margin: 0 auto -7px;
+  margin: 0 auto 6px;
   position: relative;
   z-index: 1;
   object-fit: contain;
@@ -553,7 +553,7 @@
 }
 
 .sheet__sign-pad {
-  height: 39px;
+  height: 52px;
 }
 
 .sheet__sign-rule {
@@ -573,8 +573,9 @@
 }
 
 .sheet__foot {
-  margin-top: 22px;
-  padding-top: 8px;
+  margin-top: 28px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
   font-size: 9.5px;
   color: #555;
 }
