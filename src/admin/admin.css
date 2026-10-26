@@ -454,56 +454,44 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 56px;
-  margin-top: 40px;
-  padding-top: 16px;
-  border-top: 1px solid #e6e6e6;
+  margin-top: 36px;
   align-items: end;
   page-break-inside: avoid;
 }
 
 .sheet__sign-col {
   min-width: 0;
-  max-width: 160px;
+  max-width: 180px;
 }
 
 .sheet__sign-mark {
   display: block;
-  height: 16px;
+  height: 24px;
   width: auto;
-  max-width: 54px;
-  max-height: 16px;
-  margin: 0 0 6px 2px;
+  max-width: 78px;
+  max-height: 24px;
+  margin: 0 0 4px 0;
   object-fit: contain;
   object-position: left bottom;
 }
 
 .sheet__sign-pad {
-  height: 22px;
+  height: 28px;
 }
 
 .sheet__sign-rule {
+  width: 72px;
   height: 0;
   border: 0;
   border-top: 1px solid #111;
-  margin: 0 0 6px;
-}
-
-.sheet__sign-name,
-.sheet__sign-role {
-  margin: 0;
-  font-size: 9px;
-  line-height: 1.35;
+  margin: 0 0 5px;
 }
 
 .sheet__sign-name {
-  margin-bottom: 3px;
-}
-
-.sheet__sign-role {
-  color: #555;
-  font-size: 8px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 
 .sheet__foot {
