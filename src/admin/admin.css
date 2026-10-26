@@ -461,30 +461,31 @@
 
 .sheet__sign-col {
   min-width: 0;
-  max-width: 180px;
+  max-width: 200px;
+  text-align: center;
 }
 
 .sheet__sign-mark {
   display: block;
-  height: 24px;
+  height: 38px;
   width: auto;
-  max-width: 78px;
-  max-height: 24px;
-  margin: 0 0 4px 0;
+  max-width: 110px;
+  max-height: 38px;
+  margin: 0 auto 4px;
   object-fit: contain;
-  object-position: left bottom;
+  object-position: center bottom;
 }
 
 .sheet__sign-pad {
-  height: 28px;
+  height: 38px;
 }
 
 .sheet__sign-rule {
-  width: 72px;
+  width: 88px;
   height: 0;
   border: 0;
-  border-top: 1px solid #111;
-  margin: 0 0 5px;
+  border-top: 1px solid #bdbdbd;
+  margin: 0 auto 6px;
 }
 
 .sheet__sign-name {
@@ -497,7 +498,6 @@
 .sheet__foot {
   margin-top: 22px;
   padding-top: 8px;
-  border-top: 1px solid #ddd;
   font-size: 9.5px;
   color: #555;
 }
