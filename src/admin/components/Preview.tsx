@@ -166,8 +166,7 @@ export function Preview({ doc, sheetRef }: Props) {
             alt="Signature of Udith Sandaruwan"
           />
           <div className="sheet__sign-rule" aria-hidden="true" />
-          <p className="sheet__sign-name">Udith Sandaruwan</p>
-          <p className="sheet__sign-role">Studio 1028</p>
+          <p className="sheet__sign-name">Udith Sandaruwan &nbsp;·&nbsp; Studio 1028</p>
         </div>
         <div className="sheet__sign-col">
           <div className="sheet__sign-pad" aria-hidden="true" />
