@@ -1,165 +1,128 @@
-# Studio 1028 — share posts
+# Studio 1028 — social posts
 
-Soft captions for WhatsApp, Instagram, and Facebook. Copy one block at a time. Sign as **Studio 1028 · Colombo**.
+Copy the caption. Attach the matching image. Share on Instagram, Facebook, WhatsApp, or TikTok.
 
-Contact: hello@studio1028.com · https://1028.udithsandaruwan.com
+**Studio 1028 · Colombo**  
+hello@studio1028.com · https://1028.udithsandaruwan.com
 
----
-
-## 1. Local jobs
-
-For a roommate, a friend, or anyone looking for small paid work nearby.
-
-### Post 1 — Quiet help
-
-If you are looking for local work — a few hours, a real task, paid fairly — send a short note.
-
-We sometimes need help with laptops, simple office jobs, and studio errands in Colombo. No loud hiring post. Just a door that is open.
-
-Studio 1028 · Colombo
-
-### Post 2 — For a study roommate
-
-Sharing this for a friend who is studying and looking for local work.
-
-Laptop setup, document typing, light tech help, small studio tasks. If that sounds like you, or someone you live with, write to us. We keep it simple.
-
-Studio 1028 · hello@studio1028.com
-
-### Post 3 — Small jobs, done well
-
-Not every job has to be a big company.
-
-If you need a laptop checked, a file cleaned, a site updated, or a small build — we take local work. If you want to *do* that kind of work with us, send a one-line intro.
-
-Studio 1028 · Colombo
+Images live in `docs/social/`.
 
 ---
 
-## 2. Laptops
+## 1. Device services
 
-Sales, service, and honest advice. Soft, not a shop shout.
+Laptops and desktops: wrap, upgrade, software, Windows, and cleaning.
 
-### Post 1 — A laptop that lasts
+### Post 1 — Wrap & protect
 
-A good laptop is not the loudest spec sheet.
+**Image:** `docs/social/01-laptop-wrap.jpg`
 
-We help you pick, set up, and look after a machine you can actually work on — study, office, studio. If yours feels slow, we can say why, then fix only what needs fixing.
+**Caption**
 
-Studio 1028 · Laptops · Colombo
+Your laptop works hard. The shell should too.
 
-### Post 2 — Bring it in
+Studio 1028 wraps laptops and desktops — clean finish, extra grip, and a look that is yours. Same machine. Better skin.
 
-Keyboard sticky. Battery tired. Fan loud. Screen flicker.
+Colombo · Message us for colours and price.
 
-Bring the laptop. We will tell you what is wrong in plain language, quote before we touch it, and return it ready for class or work.
-
-Studio 1028 · Device care
-
-### Post 3 — Ready for the job
-
-Starting a new job or a new semester and the old laptop cannot keep up?
-
-We can source a machine, move your files, and set it up so you sit down and work. No extra software you did not ask for.
-
-Studio 1028 · hello@studio1028.com
+**Hashtags**
+`#Studio1028` `#Colombo` `#SriLanka` `#LaptopWrap` `#LaptopSkin` `#DeviceCare` `#TechColombo`
 
 ---
 
-## 3. Religion and science updates
+### Post 2 — Upgrade, don’t replace
 
-Calm notes. Not a sermon. Not a lecture. Share when something is worth sitting with.
+**Image:** `docs/social/02-upgrade.jpg`
 
-### Post 1 — Two ways of seeing
+**Caption**
 
-Religion asks what a life is for. Science asks how the world works.
+Slow is often just full.
 
-They do not have to shout at each other. This week we are reading slowly — one idea from faith, one from research — and leaving space in between.
+We upgrade laptops and desktop computers — RAM, storage, and the parts that actually change how it feels. Quote first. Keep the machine you already know.
 
-Studio 1028 · Notes
+Studio 1028 · Device upgrades · Colombo
 
-### Post 2 — A small update
-
-A short science note, held with care.
-
-New findings do not cancel wonder. They often make it finer. If you want the quiet version — no debate thread, just the thought — we will keep posting those here.
-
-Studio 1028
-
-### Post 3 — Shared table
-
-Some of us pray. Some of us measure. Some of us do both.
-
-This studio is a small table for that mix: faith, curiosity, and the work of making things. If that is your kind of room, stay.
-
-Studio 1028 · Colombo
+**Hashtags**
+`#Studio1028` `#LaptopUpgrade` `#PCUpgrade` `#RAMUpgrade` `#SSD` `#DesktopRepair` `#ColomboTech`
 
 ---
 
-## 4. Portfolios
+### Post 3 — Install, update, clean
 
-Work you can send to a client, a roommate, or a job.
+**Image:** `docs/social/03-install-clean.jpg`
 
-### Post 1 — The work, simply
+**Caption**
 
-A few things we have built: sites, documents, campaigns, and machines that people actually use.
+Windows install. Software setup. Updates. Full device cleaning.
 
-If you need a portfolio piece, a case note, or a clean example for a local job, we can shape one with you.
+If it is a new drive, a messy system, or dust in the fans — we do the unglamorous work so the machine runs quiet again.
 
-Studio 1028 · Work · 1028.udithsandaruwan.com
+Studio 1028 · Installation & cleaning · hello@studio1028.com
 
-### Post 2 — Show, don’t shout
-
-A portfolio should feel like the person who made it.
-
-We help students and small teams put their work in order — photos, links, a short story, a page that loads. Soft, clear, ready to send.
-
-Studio 1028
-
-### Post 3 — Send this
-
-If someone asks “what do you do?”, send them one page, not ten files.
-
-We design that page. Studio work, laptop work, writing, social — one place, your name on it.
-
-Studio 1028 · hello@studio1028.com
+**Hashtags**
+`#Studio1028` `#WindowsInstallation` `#SoftwareInstall` `#LaptopCleaning` `#PCCleaning` `#ITSupport` `#Colombo`
 
 ---
 
-## 5. Customer upgrades
+## 2. Custom software
 
-RAM, storage, software, a site that feels new. Gentle, useful.
+Built for how the customer actually works: custom systems, ERP, portfolio sites, POS.
 
-### Post 1 — A little more room
+### Post 4 — Custom software
 
-Most “slow” laptops are only full.
+**Image:** `docs/social/04-custom-software.jpg`
 
-A memory or storage upgrade is often enough. We check first, quote first, then fit the part. You keep the machine you already know.
+**Caption**
 
-Studio 1028 · Upgrades
+If off-the-shelf does not fit, we build what does.
 
-### Post 2 — Soft upgrade
+Studio 1028 makes custom software from your requirements — tools your team will actually open. Clear brief. Clear delivery. Yours to use.
 
-Not a new laptop. Not a new brand. Just a quieter fan, a faster open, a screen that does not fight you.
+Colombo · 1028.udithsandaruwan.com
 
-If your machine still has life in it, we will try to keep it. That is the upgrade we like.
-
-Studio 1028 · Colombo
-
-### Post 3 — For the customer who already trusts us
-
-If we built your site or set up your laptop, you do not start over.
-
-We can refresh, add, and tighten — the next version of what you already have. Write when you are ready. No rush.
-
-Studio 1028 · hello@studio1028.com · 1028.udithsandaruwan.com
+**Hashtags**
+`#Studio1028` `#CustomSoftware` `#SoftwareDevelopment` `#SriLankaTech` `#Colombo` `#MadeForYou`
 
 ---
 
-## How to post
+### Post 5 — ERP, without the noise
 
-1. Pick one caption. Keep the line breaks.
-2. Photo: laptop on a desk, notebook, quiet room, or the Studio 1028 mark on paper. No clutter.
-3. WhatsApp: send the same text. No hashtags needed.
-4. Instagram: add `#Studio1028` `#Colombo` if you want. Stop there.
-5. Do not post all of these in one day. One every few days is enough.
+**Image:** `docs/social/05-erp.jpg`
+
+**Caption**
+
+Stock, invoices, people, and reports in one place.
+
+We set up ERP solutions that match how your shop or office already runs — not a giant system you have to become. Start small. Grow when you need to.
+
+Studio 1028 · ERP · Colombo
+
+**Hashtags**
+`#Studio1028` `#ERP` `#BusinessSoftware` `#Invoicing` `#Inventory` `#SME` `#SriLankaBusiness`
+
+---
+
+### Post 6 — Portfolio sites & POS
+
+**Image:** `docs/social/06-web-pos.jpg`
+
+**Caption**
+
+A site that shows the work. A counter that takes the sale.
+
+Portfolio websites for studios and professionals. POS systems for shops that need to bill, stock, and close the day without drama.
+
+Studio 1028 · Web & POS · hello@studio1028.com
+
+**Hashtags**
+`#Studio1028` `#PortfolioWebsite` `#POS` `#PointOfSale` `#WebDesign` `#Colombo` `#SmallBusiness`
+
+---
+
+## How to share
+
+1. One post every two or three days. Do not dump all six.
+2. Order that works: wrap → upgrade → install/clean → custom software → ERP → web/POS.
+3. WhatsApp status: image + first two lines of the caption is enough.
+4. Instagram / Facebook: full caption + hashtags.
+5. Reply to comments with the WhatsApp or email, not a long pitch.
