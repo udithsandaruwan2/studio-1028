@@ -1,12 +1,17 @@
 export const site = {
   name: 'Studio 1028',
   tagline:
-    'A studio for experiments, development, content, writing, and social — building the next kind of signal.',
+    'A community open-source studio for experiments, development, content, and social — powered by Lumyrth.',
   email: 'hello@studio1028.com',
   location: 'Colombo · Remote',
+  url: 'https://1028.lumyrth.dev',
   developer: {
     name: 'Udith Sandaruwan',
     url: 'https://udithsandaruwan.com/',
+  },
+  poweredBy: {
+    name: 'Lumyrth',
+    url: 'https://lumyrth.dev/',
   },
 } as const
 
@@ -35,6 +40,30 @@ export const practices = [
     id: '05',
     title: 'Social Marketing',
     copy: 'Channels, cadence, and community — designed as a living media practice, not noise.',
+  },
+] as const
+
+export const products = [
+  {
+    id: '01',
+    title: 'DevOpt',
+    status: 'Live',
+    blurb: 'Developer operations toolkit — workflows and tooling for teams that ship.',
+    url: 'https://devopt.udithsandaruwan.com/',
+  },
+  {
+    id: '02',
+    title: 'AI agent framework',
+    status: 'Under development',
+    blurb: 'A framework for building AI agents — still in the lab, opening soon.',
+    url: null,
+  },
+  {
+    id: '03',
+    title: 'WebXPay widget',
+    status: 'Live',
+    blurb: 'Embeddable payment widget for sites that need a clean checkout surface.',
+    url: 'https://webxpay.udithsandaruwan.com/widget/',
   },
 ] as const
 

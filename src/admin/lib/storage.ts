@@ -12,7 +12,7 @@ export const defaultSettings: StudioSettings = {
   email: 'hello@studio1028.com',
   phone: '',
   address: 'Colombo, Sri Lanka',
-  website: 'https://1028.udithsandaruwan.com',
+  website: 'https://1028.lumyrth.dev',
   bankName: '',
   bankAccount: '',
   currency: 'LKR',

@@ -4,6 +4,7 @@ import { ImageStrip } from '../components/ImageStrip'
 import { About } from '../components/About'
 import { FilmBand } from '../components/FilmBand'
 import { Practices } from '../components/Practices'
+import { Products } from '../components/Products'
 import { Work } from '../components/Work'
 import { Method } from '../components/Method'
 import { Notes } from '../components/Notes'
@@ -23,6 +24,7 @@ export function Home() {
         <About />
         <FilmBand />
         <Practices />
+        <Products />
         <Work />
         <Method />
         <Notes />
