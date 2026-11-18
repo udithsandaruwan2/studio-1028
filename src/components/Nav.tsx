@@ -5,6 +5,7 @@ import { site } from '../data/content'
 const links = [
   { href: '#about', label: 'About' },
   { href: '#practices', label: 'Practices' },
+  { href: '#products', label: 'Products' },
   { href: '#work', label: 'Work' },
   { href: '#notes', label: 'Notes' },
   { href: '#contact', label: 'Contact' },
@@ -71,10 +72,19 @@ export function Nav() {
               ))}
             </nav>
             <div className="menu-overlay__meta">
-              <p className="mono">Experiments · Media · Systems</p>
+              <p className="mono">Community · Open source · Systems</p>
               <div className="menu-overlay__meta-links">
                 <a className="mono" href={`mailto:${site.email}`} onClick={close}>
                   {site.email}
+                </a>
+                <a
+                  className="mono"
+                  href={site.poweredBy.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={close}
+                >
+                  Powered by {site.poweredBy.name}
                 </a>
                 <a
                   className="mono"
