@@ -3,7 +3,7 @@
 Copy the caption. Attach the matching image. Share on Instagram, Facebook, WhatsApp, or TikTok.
 
 **Studio 1028 · Colombo**  
-hello@studio1028.com · https://1028.udithsandaruwan.com
+hello@studio1028.com · https://1028.lumyrth.dev
 
 Images live in `docs/social/`.
 
@@ -78,7 +78,7 @@ If off-the-shelf does not fit, we build what does.
 
 Studio 1028 makes custom software from your requirements — tools your team will actually open. Clear brief. Clear delivery. Yours to use.
 
-Colombo · 1028.udithsandaruwan.com
+Colombo · 1028.lumyrth.dev
 
 **Hashtags**
 `#Studio1028` `#CustomSoftware` `#SoftwareDevelopment` `#SriLankaTech` `#Colombo` `#MadeForYou`

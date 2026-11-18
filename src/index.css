@@ -591,6 +591,87 @@ ul {
   }
 }
 
+/* —— Products —— */
+.products__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.products__card {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.35rem 1.25rem 1.4rem;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(145deg, rgba(201, 107, 60, 0.08), transparent 42%),
+    var(--surface);
+  color: inherit;
+  transition:
+    border-color 0.25s var(--ease),
+    transform 0.25s var(--ease);
+}
+
+a.products__card:hover {
+  border-color: var(--paper-dim);
+  transform: translateY(-2px);
+}
+
+.products__card--soon {
+  opacity: 0.88;
+}
+
+.products__meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--mist);
+}
+
+.products__status.is-live {
+  color: var(--signal);
+}
+
+.products__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.45rem, 2.8vw, 1.9rem);
+  letter-spacing: -0.02em;
+}
+
+.products__blurb {
+  margin: 0;
+  color: var(--paper-dim);
+  line-height: 1.55;
+  max-width: 36rem;
+}
+
+.products__link {
+  color: var(--mist);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+}
+
+@media (min-width: 800px) {
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.section__lead a {
+  color: var(--paper);
+  border-bottom: 1px solid var(--line);
+  transition:
+    color 0.25s var(--ease),
+    border-color 0.25s var(--ease);
+}
+
+.section__lead a:hover {
+  color: var(--signal);
+  border-color: var(--signal);
+}
+
 /* —— Work —— */
 .work__head {
   display: grid;
@@ -848,6 +929,14 @@ ul {
   color: var(--signal);
 }
 
+.form-status--error {
+  color: #d9856b;
+}
+
+.contact__honeypot {
+  display: none !important;
+}
+
 @media (min-width: 900px) {
   .contact__wrap {
     grid-template-columns: 1fr 1fr;
@@ -905,6 +994,17 @@ ul {
   padding: 1.25rem 0;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+.footer__credit-stack {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.footer__credit-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
 }
 
 .footer__credit p {
